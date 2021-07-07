@@ -1,0 +1,671 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;
+
+300;400;500;600;700&display=swap);body {
+  background-color: #121212;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: white !important;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+.nav_menu {
+  width: 241px;
+  background-color: black;
+  height: 100vh;
+  width: 17%;
+  padding-left: 6px;
+  position: fixed;
+}
+
+.page {
+  display: flex;
+}
+
+.content {
+  background: #240303;
+  background: linear-gradient(180deg, #240303 0%, #240303 7%, black 100%);
+  width: 83%;
+  height: 100vh;
+  margin-left: 17%;
+  overflow: auto;
+  padding-bottom: 89px;
+}
+
+.menu > ul {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+
+.menu > ul > li {
+  width: 93%;
+  margin-left: 3%;
+  border-radius: 4px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px;
+  color: #b3b3b3 !important;
+  transition: 0.4s;
+}
+
+.menu > ul > li:hover {
+  color: white !important;
+  cursor: pointer;
+}
+
+.menu > ul > li > i {
+  font-size: 28px;
+  margin-right: 11px;
+}
+
+#logo {
+  color: white;
+  width: 136px;
+  margin-left: 3%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.playlist_create {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 93%;
+  margin-left: 3%;
+}
+
+.playlist_create > i {
+  color: white;
+  font-size: 25px;
+  margin-right: 11px;
+}
+
+.playlist_create > p {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.menu > hr {
+  background-color: #ffffff;
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.playlists {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 14px;
+}
+
+.min_name {
+  width: 685px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 25px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  margin-left: -62px;
+}
+
+.playlists > a {
+  text-decoration: none;
+  color: #b3b3b3;
+  margin-bottom: 5px;
+}
+
+.music_row {
+  color: white;
+  padding-top: 15px;
+}
+
+.music_card {
+  width: 206px;
+  height: 284px;
+  background-color: #181818;
+  transition: 0.3s;
+  margin-left: 15px;
+}
+
+.music_card:hover {
+  background-color: #282828;
+}
+
+.card_img {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  position: relative;
+}
+
+.card_img > img {
+  width: 174px;
+  box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.2);
+}
+
+.card_title {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 5px;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  padding-left: 16px;
+  margin-top: 5px;
+}
+
+.card_author {
+  color: #b3b3b3;
+  margin-left: 16px;
+}
+
+.row_title {
+  font-weight: bold;
+  margin-left: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.row_cont {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hi_block {
+  height: 80px;
+  width: 360px;
+  background: rgba(213, 213, 213, 0.2);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  margin-left: 15px;
+}
+
+.card_play {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  background-color: #1db954;
+  bottom: 6px;
+  margin-left: 117px;
+}
+
+.card_play > i {
+  font-size: 23px;
+  margin-left: 3px;
+  color: white;
+}
+
+.music_card .card_play {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.music_card:hover .card_play {
+  opacity: 1;
+}
+
+.hi_block:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hi_img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.hi_img > img {
+  height: 80px;
+}
+
+.hi_title {
+  font-weight: bold;
+  padding: 14px;
+}
+
+.album_img > img {
+  width: 232px;
+  height: 232px;
+}
+
+.album_info {
+  color: white;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.album_name {
+  font-size: 83px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 71px;
+}
+
+.album_author {
+  margin-top: 10px;
+}
+
+.album_header {
+  display: flex;
+  align-items: center;
+  padding-top: 64px;
+  padding-left: 25px;
+}
+
+.album_tracks {
+  padding: 25px;
+}
+
+.album_tracks > table {
+  color: white;
+}
+
+.player {
+  width: 100%;
+  height: 90px;
+  background-color: #181818;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #282828;
+  justify-content: space-around;
+}
+
+.current_img > img {
+  width: 56px;
+}
+
+.current_img {
+  width: 56px;
+  height: 56px;
+}
+
+.player_current {
+  display: flex;
+  align-items: center;
+}
+
+.current_name {
+  color: white;
+  margin-left: 12px;
+}
+
+.player {
+  display: flex;
+}
+
+.current_btns {
+  display: flex;
+  align-items: center;
+  width: 197px;
+  justify-content: space-around;
+}
+
+.current_control {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.current_time {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.timeline {
+  color: white;
+  display: flex;
+}
+
+.timeline > input {
+  width: 100%;
+}
+
+input[type=range] {
+  width: 100%;
+  margin: 5.75px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: #1db954;
+  border: 0;
+  border-radius: 3.1px;
+  width: 100%;
+  height: 4.5px;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -5.75px;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #20cf5e;
+}
+
+input[type=range]::-moz-range-track {
+  background: #1db954;
+  border: 0;
+  border-radius: 3.1px;
+  width: 100%;
+  height: 4.5px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 6.75px 0;
+  color: transparent;
+  width: 100%;
+  height: 4.5px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #1aa34a;
+  border: 0;
+  border-radius: 6.2px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #1db954;
+  border: 0;
+  border-radius: 6.2px;
+}
+
+input[type=range]::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #1db954;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #20cf5e;
+}
+
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+
+@supports (-ms-ime-align: auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+
+  input[type=range] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+
+.current_vol {
+  display: flex;
+  align-items: center;
+}
+
+.history_btn {
+  width: 32px;
+  height: 32px;
+  background-color: #00000054;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.history_btn > i {
+  color: white;
+  font-size: 30px;
+}
+
+.page_control {
+  display: flex;
+}
+
+.page_header {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 82%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+#audio_line {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #5a5a5a;
+  border: 0px none #ffffff;
+  border-radius: 90px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #5a5a5a;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+tr:hover {
+  background-color: #ffffff2e;
+}
+
+.artist_bg {
+  width: 100%;
+  height: 340px;
+  background-size: 83% !important;
+  background-position-x: 246px !important;
+}
+
+.artist_name {
+  font-size: 96px;
+  color: white;
+  font-weight: bold;
+  bottom: 0;
+  line-height: 53px;
+}
+
+.verify {
+  display: flex;
+  color: white;
+}
+
+.listens {
+  padding-top: 33px;
+  color: white;
+}
+
+.artist_info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  padding: 25px;
+  background-color: #00000021;
+}
+
+.search_inp {
+  width: 364px;
+  height: 40px;
+  border-radius: 18px;
+  border: none;
+  margin-left: 25px;
+}
+
+.login {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+
+.login_btnq {
+  margin-left: 25px;
+  background-color: white;
+  color: #181818;
+  width: 123px;
+  height: 38px;
+  border-radius: 500px;
+  text-align: center;
+  line-height: 38px;
+}
+
+.register_form {
+  color: white;
+  font-weight: bold;
+  padding: 19px;
+  width: 474px;
+  background-color: #171717;
+  border-radius: 7px;
+  margin-left: 16px;
+  margin-top: 21px;
+}
+
+.creare_pl {
+  background-color: #b2b2b2;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-right: 13px;
+  margin-left: 7px;
+}
+
+.playlist_create > p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.playlist_create:hover {
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  width: 180px;
+  height: 32px;
+  background-color: #000000de;
+  border-radius: 15px;
+  overflow: hidden;
+  align-items: center;
+  padding: 2px 0px 2px 2px;
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.prof_name {
+  width: 119px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.prof_img > img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.prof_arrow > svg {
+  fill: white;
+}
+
