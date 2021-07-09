@@ -13,6 +13,6 @@ class Track extends Model
 
     public function playlist()
     {
-        return $this->hasOne('App\Playlist','id','playlist_id');
+        return $this->hasOne(Playlist::class,'id','playlist_id');
     }
 }

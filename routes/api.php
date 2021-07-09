@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\PlaylistController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::namespace('Api')->group(function () {
-    Route::post('/playlist', 'PlaylistController@getPlaylist');
+    Route::post('/playlist', [PlaylistController::class, 'getPlaylist']);
     Route::post('/download', 'PlaylistController@getPlaylists');
     Route::post('/allPlay', 'PlaylistController@allPlay');
     Route::post('/selectAll', 'PlaylistController@selectAll');

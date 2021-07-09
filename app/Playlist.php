@@ -13,6 +13,6 @@ class Playlist extends Model
 
     public function tracks()
     {
-        return $this->hasMany('App\Track','playlist_id','id');
+        return $this->hasMany(Track::class,'playlist_id','id');
     }
 }
